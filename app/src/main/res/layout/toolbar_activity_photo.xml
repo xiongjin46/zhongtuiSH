@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@id/parent_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff000000" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/parent_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<com.jiaoao.lzb.lzbApplication.widget.photoview.PhotoView-->
+    <!--android:id="@id/parent_img"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/my_bg" />-->
+
+    <TextView
+        android:id="@id/parent_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="1/9"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text18spF1" />
+
+    <TextView
+        android:id="@id/tv_save"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="保存"
+        android:layout_margin="10dp"
+        android:layout_gravity="bottom|left"
+        android:clickable="true"
+        android:textSize="@dimen/text12spF5"
+        android:textColor="@color/colorCC"
+        android:gravity="center"
+        android:background="@drawable/btn_border_white_primary"/>
+
+    <com.push.PushMerchant.view.IconFontTextView
+        android:id="@id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/icon_back"
+        android:textColor="@color/colorCC"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp" />
+
+</FrameLayout>

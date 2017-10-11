@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.push.PushMerchant.view.theme.ColorView
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/detail_orange" />
+
+    <com.push.PushMerchant.view.theme.ColorRelativeLayout
+        android:id="@+id/toolbar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/detail_orange"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <com.push.PushMerchant.view.IconFontTextView
+                android:id="@+id/toolbar_back_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="-10dp"
+                android:gravity="center"
+                android:text="@string/icon_back"
+                android:textColor="@color/colorCC"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/toolbar_back_last_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/toolbar_back_tv"
+                android:gravity="center"
+                android:text="@string/tv_back"
+                android:textColor="@color/selector_text_color"
+                android:textSize="@dimen/text14spF3" />
+
+            <TextView
+                android:id="@+id/toolbar_fun1"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/toolbar_back_last_tv"
+                android:background="@null"
+                android:gravity="center"
+                android:src="@drawable/ic_down_select"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/toolbar_close"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/toolbar_fun1"
+                android:gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/ic_close_select"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/colorCC"
+            android:textSize="@dimen/text20sp" />
+
+        <RelativeLayout
+            android:id="@+id/toolbar_fun2"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/toolbar_fun2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="编辑"
+                android:textColor="@color/colorC1"
+                android:textSize="@dimen/text14spF3"
+                android:visibility="gone" />
+
+            <com.push.PushMerchant.view.IconFontTextView
+                android:id="@+id/toolbar_fun2_fonttv"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center"
+                android:scaleType="center"
+                android:textColor="@color/colorC2"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+            <!--<com.jiaoao.lzb.lzbApplication.view.IconFontTextView-->
+            <!--android:id="@+id/toolbar_fun3_tv"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_toLeftOf="@id/toolbar_fun2_fonttv"-->
+            <!--android:background="@null"-->
+            <!--android:gravity="center"-->
+            <!--android:scaleType="center"-->
+            <!--android:textColor="@color/colorC2"-->
+            <!--android:textSize="24dp"-->
+            <!--android:visibility="gone" />-->
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorC4" />
+
+    </com.push.PushMerchant.view.theme.ColorRelativeLayout>
+</LinearLayout>

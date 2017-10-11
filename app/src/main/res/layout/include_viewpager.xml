@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.push.PushMerchant.view.ArcLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/arclayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCC"
+    app:arc_height="0dp"
+    android:elevation="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.push.PushMerchant.weight.viewpage.CBLoopViewPager
+            android:id="@+id/cbLoopViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- 翻页指示点的viewgroup -->
+
+        <LinearLayout
+            android:id="@+id/loPageTurningPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"/>
+    </RelativeLayout>
+
+</com.push.PushMerchant.view.ArcLayout>

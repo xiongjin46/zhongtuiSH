@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/realtabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.push.PushMerchant.view.MyRadioButton
+                        android:id="@+id/rb_tab1"
+                        style="@style/menu_item_radioButton"
+                        android:drawableTop="@drawable/search_selector"
+                        android:text="发现"
+                        android:textColor="@drawable/tabitem_text_color" />
+
+                    <com.push.PushMerchant.view.MyRadioButton
+                        android:id="@+id/rb_tab2"
+                        style="@style/menu_item_radioButton"
+                        android:drawableTop="@drawable/demand_selector"
+                        android:text="广告源"
+                        android:textColor="@drawable/tabitem_text_color" />
+
+                    <com.push.PushMerchant.view.MyRadioButton
+                        android:id="@+id/rb_tab3"
+                        style="@style/menu_item_radioButton"
+                        android:drawableTop="@drawable/order_selector"
+                        android:text="地图"
+                        android:textColor="@drawable/tabitem_text_color" />
+
+                    <com.push.PushMerchant.view.MyRadioButton
+                        android:id="@+id/rb_tab4"
+                        style="@style/menu_item_radioButton"
+                        android:drawableTop="@drawable/personal_selector"
+                        android:text="我的"
+                        android:textColor="@drawable/tabitem_text_color" />
+                </RadioGroup>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/tab_backgroud_shade"
+                    android:layout_marginTop="-2dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

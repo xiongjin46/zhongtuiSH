@@ -1,0 +1,111 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        relese {
+            keyAlias 'maps'
+            keyPassword '110125'
+            storeFile file('C:/Users/Administrator/Desktop/newkey/push.jks')
+            storePassword '110125'
+            v2SigningEnabled false
+        }
+        debug {
+            keyAlias 'maps'
+            keyPassword '110125'
+            storeFile file('C:/Users/Administrator/Desktop/newkey/push.jks')
+            storePassword '110125'
+        }
+        alpha {
+            keyAlias 'maps'
+            keyPassword '110125'
+            storeFile file('C:/Users/Administrator/Desktop/newkey/push.jks')
+            storePassword '110125'
+        }
+    }
+    compileSdkVersion 24
+    buildToolsVersion "25.0.2"
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId "com.push.PushMerchant"
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 1001
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters "armeabi", "x86", "armeabi-v7a", "arm64-v8a"
+        }
+    }
+    buildTypes {
+        debug {
+            buildConfigField("int", "APP_STATUS", "0")
+            signingConfig signingConfigs.debug
+            multiDexEnabled true
+//            versionNameSuffix "_debug"
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            minifyEnabled true //混淆
+//            zipAlignEnabled true  //Zipalign优化
+//            shrinkResources true  // 移除无用的resource文件
+        }
+        release {
+            multiDexEnabled true
+            zipAlignEnabled true
+            shrinkResources false
+            buildConfigField("int", "APP_STATUS", "1")
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.relese
+        }
+        alpha {
+            multiDexEnabled true
+            zipAlignEnabled true
+            shrinkResources false
+            buildConfigField("int", "APP_STATUS", "2")
+            signingConfig signingConfigs.alpha
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:cardview-v7:24.0.0'
+    compile 'com.android.support:palette-v7:24.0.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:24.0.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.google.code.gson:gson:2.4'
+    //下拉刷新
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    //注解插件
+    compile 'com.jakewharton:butterknife:8.2.1'
+    compile 'com.jakewharton:butterknife-compiler:8.2.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    // 高斯模糊
+    compile 'net.qiujuer.genius:graphics:2.0.0'
+    compile 'com.kyleduo.switchbutton:library:1.2.9'
+    compile 'com.android.support:multidex:1.0.1'
+    //查找内存泄漏
+    //        debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    //        releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    compile project(':oss-android-sdk')
+    compile project(':pickerview')
+}

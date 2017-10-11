@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#efaa02</color>
+    <color name="theme">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray_cc">#cccccccc</color>
+    <color name="tabhost_selexter">#000000</color>
+    <!-- 默认ripple颜色 -->
+    <color name="ripple_light">#66CBCBCB</color>
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+
+    <color name="textview_black">#111111</color>
+
+    <color name="colorC0">#000000</color>
+    <color name="colorC1">#333333</color>
+    <color name="colorC2">#666666</color>
+    <color name="colorC3">#999999</color>
+    <color name="colorC4">#dbdbdb</color>
+    <color name="colorC5">#f1f1f1</color>
+    <color name="colorC6">#f6f6f6</color>
+    <color name="colorCC">#ffffff</color>
+    <color name="colorC7">#f0f0f0</color>
+    <color name="colorC8">#929292</color>
+    <color name="colorC9">#a9a9a9</color>
+    <color name="colorC10">#67afc9</color>
+    <color name="colorC11">#f98a11</color>
+    <color name="color12">#00e676</color>
+    <color name="color13">#4caf50</color>
+    <color name="color14">#f93911</color>
+    <color name="colorf5">#f5f5f5</color>
+    <color name="colorpurple">#a85ce0</color>
+    <color name="j_wheel_timebtn_nor">#54a3fa</color>
+    <color name="j_wheel_timebtn_pre">#CCCCCC</color>
+    <color name="colorView">#e3e3e3</color>
+    <color name="detail_orange">#efaa02</color>
+    <color name="color40">#66ffffff</color>
+    <color name="color60">#99ffffff</color>
+    <color name="login_bg">#1190ce</color>
+
+    <!--progress start-->
+    <color name="round_corner_progress_bar_background_default">#5f5f5f</color>
+    <color name="round_corner_progress_bar_progress_default">#7f7f7f</color>
+    <color name="round_corner_progress_bar_secondary_progress_default">@android:color/transparent
+    </color>
+    <color name="picker_pager_bg">#ca000000</color>
+    <color name="colorDialogOverlay">#92000000</color>
+
+    <eat-comment/>
+    <color name="dialogplus_black_overlay">#60000000</color>
+    <color name="dialogplus_card_shadow">#D4D4D4</color>
+    <!-- From: file:/Users/oobut/Desktop/dev/orhanobut/dialogplus/dialogplus/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+</resources>

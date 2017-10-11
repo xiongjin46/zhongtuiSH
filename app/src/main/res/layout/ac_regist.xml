@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorC5">
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_bg"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_login_ll"
+        android:orientation="vertical"
+        android:paddingBottom="60dp">
+
+        <EditText
+            android:drawablePadding="8dp"
+            android:drawableLeft="@mipmap/phone"
+            android:id="@+id/et_regist_num"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:hint="@string/login_phone"
+            android:inputType="number"
+            android:textColorHint="@color/colorC3"
+            android:textSize="15sp" />
+
+        <View style="@style/addstore_view" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp">
+
+            <EditText
+                android:drawablePadding="6dp"
+                android:drawableLeft="@mipmap/code"
+                android:id="@+id/et_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="@string/regist_num"
+                android:inputType="number"
+                android:textColorHint="@color/colorC3"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_regist_getNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/regist_getnum"
+                android:textColor="@color/detail_orange"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <View style="@style/addstore_view" />
+
+        <EditText
+            android:drawablePadding="8dp"
+            android:drawableLeft="@mipmap/key"
+            android:id="@+id/et_regist_psw"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="12dp"
+            android:background="@null"
+            android:hint="@string/login_psw"
+            android:inputType="numberPassword"
+            android:textColorHint="@color/colorC3"
+            android:textSize="15sp" />
+
+        <View style="@style/addstore_view" />
+
+        <EditText
+            android:drawablePadding="8dp"
+            android:drawableLeft="@mipmap/key"
+            android:id="@+id/et_again_regist_psw"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="12dp"
+            android:background="@null"
+            android:hint="@string/login_agein_psw"
+            android:inputType="numberPassword"
+            android:textColorHint="@color/colorC3"
+            android:textSize="15sp" />
+
+        <View style="@style/addstore_view" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/btn_login_ship"
+        android:text="@string/next"
+        android:textColor="@color/colorCC"
+        android:textSize="17sp" />
+</RelativeLayout>
+
+

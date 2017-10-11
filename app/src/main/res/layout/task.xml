@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorC5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_login_ll"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="60dp"
+                android:maxLines="2"
+                android:text="深圳骄傲科技网络有限公司LZB项目推广"
+                android:textColor="@color/textview_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="¥ 15.00"
+                android:textColor="@color/detail_orange"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:divider="@drawable/shape_listdivider"
+            android:dividerPadding="10dp"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:id="@+id/tribe_title_ll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/fg_task_push"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="@color/login_bg"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fg_task_push"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="推广人数"
+                    android:textColor="@color/colorC2"
+                    android:textSize="@dimen/text12spF5" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/tribe_follow_rl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/follow_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="@color/login_bg"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/follow_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/follow_num"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="完成次数"
+                    android:textColor="@color/colorC2"
+                    android:textSize="@dimen/text12spF5" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tribe_fans_rl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/fans_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/login_bg"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/fans_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fans_num"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="已完成的次数"
+                    android:textColor="@color/colorC2"
+                    android:textSize="@dimen/text12spF5" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tribe_rl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tribe_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="10000"
+                    android:textColor="@color/textview_black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tribe_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tribe_num"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="任务总次数"
+                    android:textColor="@color/colorC2"
+                    android:textSize="@dimen/text12spF5" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/task_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_task_ship"
+                android:text="完成情况"
+                android:textColor="@color/login_bg" />
+
+            <TextView
+                android:id="@+id/task_team_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/btn_task_ship"
+                android:text="团队奖励"
+                android:textColor="@color/login_bg" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

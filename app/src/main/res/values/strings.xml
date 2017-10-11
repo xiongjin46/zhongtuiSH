@@ -1,0 +1,60 @@
+<resources>
+    <string name="net_outage">当前网络不可用,请设置网络</string>
+    <string name="app_name">众推商务版</string>
+    <string name="tv_back">返回</string>
+    <string name="toolbar_home">发现</string>
+    <string name="toolbar_team">地图</string>
+    <string name="toolbar_person">我的</string>
+    <string name="toolbar_task">广告源</string>
+    <string name="login">登录</string>
+    <string name="login_phone">请输入手机号码</string>
+    <string name="login_psw">请输入登录密码</string>
+    <string name="login_agein_psw">请再次输入密码</string>
+    <string name="login_forget">忘记密码？</string>
+    <string name="regist_shen_shi_qu">请选择省、市、区</string>
+    <string name="regist_mendian">请选择所属门店</string>
+    <string name="regist_add_store">+ 添加新门店</string>
+    <string name="regist_num">请输入短信验证码</string>
+    <string name="regist_getnum">获取验证码</string>
+    <string name="next">下一步</string>
+    <string name="addstore_choose">请选择渠道</string>
+    <string name="addstore_contacts">请输入联系人</string>
+    <string name="addstore_store_name">请输入门店名称</string>
+    <string name="addstore_contacts_phone">请输入联系电话</string>
+    <string name="addstore_location">请定位门店位置</string>
+    <string name="addstore">添加</string>
+    <string name="addaccount">请输入支付宝账号</string>
+    <string name="addaccountagain">请再次输入支付宝账号</string>
+    <string name="push">提交</string>
+    <string name="comment">提现</string>
+    <string name="save">保存</string>
+    <string name="Assigm">分配</string>
+    <string name="tv_remark">请输入%1$s</string>
+    <string name="call">确定打过去吗？</string>
+
+    <!--四个返回键-->
+    <string name="icon_back">&#xe600;</string>
+    <string name="right_back">&#xe617;</string>
+    <string name="top_back">&#xe61e;</string>
+    <string name="botton_back">&#xe61f;</string>
+    <!--搜索-->
+    <string name="icon_search">&#xe622;</string>
+    <!--时间-->
+    <string name="icon_time">&#xe688;</string>
+    <!--加号-->
+    <string name="icon_add">&#xe610;</string>
+    <!--未选中-->
+    <string name="icon_select_normal">&#xe623;</string>
+    <string name="icon_select_pressed">&#xe624;</string>
+
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="pickerview_bgColor_overlay">#60000000</color>
+    <color name="pickerview_bgColor_default">#FFFFFFFF</color>
+
+</resources>

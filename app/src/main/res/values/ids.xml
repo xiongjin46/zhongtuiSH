@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="scrollview" type="id" />
+    <item name="fragment_rotate_header_with_view_group_frame" type="id" />
+
+    <item name="CoordinatorLayout" type="id"/>
+
+    <!--二维码 start-->
+    <item name="decode" type="id" />
+    <item name="decode_failed" type="id" />
+    <item name="decode_succeeded" type="id" />
+    <item name="launch_product_query" type="id" />
+    <item name="quit" type="id" />
+    <item name="restart_preview" type="id" />
+    <item name="return_scan_result" type="id" />
+    <!--二维码 end-->
+
+    <item name="home_zoomview" type="id" />
+    <item name="tribe_add" type="id" />
+    <item name="cb_item_tag" type="id" />
+
+    <item name="fab_label" type="id" />
+
+    <item name="parent" type="id" />
+    <item name="parent_bg" type="id" />
+    <item name="parent_img" type="id" />
+    <item name="parent_vp" type="id" />
+    <item name="parent_page" type="id" />
+    <item name="tv_save" type="id" />
+    <item name="tv_back" type="id" />
+
+    <item name="icon_message_prompt" type="id" />
+
+    <item name="id_stickynavlayout_topview" type="id"/>
+    <item name="id_stickynavlayout_viewpager" type="id"/>
+    <item name="id_stickynavlayout_indicator" type="id"/>
+    <item name="id_stickynavlayout_innerscrollview" type="id"/>
+
+    <item name="details_header_container" type="id"/>
+    <item name="details_text_container" type="id"/>
+
+    <item name="text1" type="id"/>
+    <item name="text2" type="id"/>
+    <item name="text3" type="id"/>
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCC"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_materiel"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="4dp" />
+
+    <com.push.PushMerchant.weight.webview.BaseWebView
+        android:id="@+id/materiel_webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_materiel"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/colorCC"
+        android:lineSpacingExtra="5dp"
+        android:paddingBottom="12dp"
+        android:textSize="15sp" />
+
+</RelativeLayout>

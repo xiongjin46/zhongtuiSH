@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/id_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_margin="@dimen/basic_margin_10"
+        android:layout_marginLeft="@dimen/basic_margin_10"
+        android:background="@drawable/shape_city_bg_normal"
+        android:gravity="start"
+        android:maxLength="40"
+        android:padding="@dimen/basic_margin_6"
+        android:textSize="@dimen/text12spF5" />
+
+    <TextView
+        android:id="@+id/id_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_addstore_ship"
+        android:gravity="center_horizontal"
+        android:text="保存"
+        android:textColor="@color/colorCC"
+        android:textSize="17sp" />
+</LinearLayout>
